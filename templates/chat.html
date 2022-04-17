@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js' integrity='sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>
+        Hello Bulma!
+    </title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
+ </head>
+ <body>
+    <section class='section'>
+        <div class='container'>
+            <h1 class="title">Hola soy el bot de DDHH de Huixquiluca</h1>
+        <ul>
+        {% for m in lista %}
+            <li>{{ m }}</li>
+        {% endfor %}
+        </ul>
+        <footer class="footer">
+         <form action="/" method="post">
+             <input class='input' type='text' placeholder='' name="mensaje">
+             <button class='button is-info' type="submit">Enviar</button>
+         </form>
+     <a href="/clear"><button class='button is-danger'>Borrar chat</button></a>
+     </footer>
+       </div>
+    </section>
+ </body>
+</html>
